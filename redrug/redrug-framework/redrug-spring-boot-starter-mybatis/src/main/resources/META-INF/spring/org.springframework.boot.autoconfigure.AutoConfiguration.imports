@@ -1,0 +1,2 @@
+cn.ultragy.redrug.framework.datasource.config.RedrugDataSourceAutoConfiguration
+cn.ultragy.redrug.framework.mybatis.config.RedrugMybatisAutoConfiguration

@@ -1,0 +1,2 @@
+cn.ultragy.redrug.framework.security.config.RedrugSecurityAutoConfiguration
+cn.ultragy.redrug.framework.security.config.RedrugWebSecurityConfigurerAdapter

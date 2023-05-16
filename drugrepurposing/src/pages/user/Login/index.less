@@ -1,0 +1,84 @@
+@import (reference) '~antd/es/style/themes/index';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+  background: @layout-body-background;
+}
+
+.lang {
+  width: 100%;
+  height: 40px;
+  line-height: 44px;
+  text-align: right;
+  :global(.ant-dropdown-trigger) {
+    margin-right: 24px;
+  }
+}
+
+.content {
+  flex: 1;
+  padding: 32px 0;
+}
+
+@media (min-width: @screen-md-min) {
+  .container {
+    background-image: url('https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMu.svg');
+    background-repeat: no-repeat;
+    background-position: center 110px;
+    background-size: 100%;
+  }
+
+  .content {
+    padding: 32px 0 24px;
+  }
+}
+
+.icon {
+  margin-left: 8px;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  &:hover {
+    color: @primary-color;
+  }
+}
+
+.login .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #f09965;
+  font-size: 16px;
+  text-shadow: 0 0 0.25px currentColor;
+}
+
+.login .ant-tabs-tab-btn {
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.login .ant-form {
+  width: 378px;
+}
+
+.login .ant-input-affix-wrapper-lg {
+  width: 378px;
+  height: 61px;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.login .ant-pro-form-login-main {
+  min-width: 378px;
+}
+
+.login .ant-btn-primary {
+  height: 61px;
+  font-size: 16px;
+  border-radius: 5px;
+}
