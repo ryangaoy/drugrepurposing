@@ -52,14 +52,14 @@
             <artifactId>jsch</artifactId>
             <version>0.1.55</version>
         </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
-        </dependency>
         <dependency>
             <groupId>cn.ultragy</groupId>
             <artifactId>redrug-spring-boot-starter-excel</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.dtflys.forest</groupId>
+            <artifactId>forest-spring-boot-starter</artifactId>
+            <version>1.5.31</version>
         </dependency>
         <dependency>
             <groupId>cn.ultragy</groupId>

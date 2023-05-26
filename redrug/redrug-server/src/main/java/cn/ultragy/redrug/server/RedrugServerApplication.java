@@ -1,5 +1,6 @@
 package cn.ultragy.redrug.server;
 
+import com.dtflys.forest.springboot.annotation.ForestScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -14,6 +15,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SuppressWarnings("SpringComponentScan") // 忽略 IDEA 无法识别 ${redrug.info.base-package}
 @SpringBootApplication(scanBasePackages = {"${redrug.info.base-package}.server", "${redrug.info.base-package}.module"})
+@ForestScan(basePackages = "cn.ultragy.redrug.module.redrug.controller.admin.dock.httpservice")
 public class RedrugServerApplication {
 
     public static void main(String[] args) {
