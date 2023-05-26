@@ -1,2 +1,0 @@
-org.springframework.boot.env.EnvironmentPostProcessor=\
-  cn.ultragy.redrug.framework.mybatis.config.IdTypeEnvironmentPostProcessor
