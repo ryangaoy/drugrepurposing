@@ -1,0 +1,6 @@
+cn.ultragy.redrug.framework.apilog.config.RedrugApiLogAutoConfiguration
+cn.ultragy.redrug.framework.jackson.config.RedrugJacksonAutoConfiguration
+com.github.xiaoymin.knife4j.spring.configuration.Knife4jAutoConfiguration
+cn.ultragy.redrug.framework.swagger.config.RedrugSwaggerAutoConfiguration
+cn.ultragy.redrug.framework.web.config.RedrugWebAutoConfiguration
+cn.ultragy.redrug.framework.xss.config.RedrugXssAutoConfiguration
