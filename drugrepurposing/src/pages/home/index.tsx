@@ -44,11 +44,11 @@ const Home: React.FC = () => {
           <Col span={12}>
             <h2 className="listivo-heading-v2__text">Explore Listings on Listivo</h2>
             <div className="listivo-content-v1__text">
-              Maecenas tristique feugiat eros, quis porttitor tortor fringilla quis. Aenean porta
-              vehicula felis, malesuada maximus justo egestas non. Duis ultrices euismod dignissim.
-              Praesent maximus condimentum maximus.
-              <br />
-              Mauris vehicula ligula sem.
+              The repurposing of existing drugs is a rapid and highly effective strategy for
+              the discovery and development of drugs to treat new diseases. It is a publicly
+              available database providing structural data on 7162 drugs, 10,094 manually processed
+              targets that can be used directly in computer calculations, relevant gene pathway
+              information, literature, and over 70 million drug-target activity predictions.
             </div>
             <Row style={{ marginTop: 24 }} gutter={60}>
               {/*<Col span={4}></Col>*/}

@@ -36,7 +36,7 @@ const HomeHeader: React.FC = () => {
         <div className="background-overlay" />
         <div style={{ position: 'relative' }}>
           <Text className="header-top-title" strong>
-            Search drugs
+            Search drug
           </Text>
           <Text className="header-top-title" strong>
             & protein on

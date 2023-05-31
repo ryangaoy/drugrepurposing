@@ -41,12 +41,10 @@ const HomeHeader: React.FC = () => {
           </Text>
           <div className="about-widget-container">
             <p>
-              Maecenas tristique feugiat eros, quis porttitor tortor
-              <br />
-              fringilla quis. Aenean porta vehicula felis, malesuada <br />
-              maximus justo egestas non. Duis ultrices euismod
-              <br />
-              dignissim. Praesent maximus condimentum maximus.
+              If the database does not have the activity prediction <br />
+              data for the drug and target you need, you can contact <br />
+              us. Give us the drugs and targets you need to predict <br />
+              and we will help accordingly. <br />
             </p>
           </div>
         </div>
