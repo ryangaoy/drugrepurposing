@@ -1,16 +1,18 @@
 package cn.ultragy.redrug.module.redrug.entity;
 
 import lombok.Data;
+import nonapi.io.github.classgraph.json.Id;
+import org.bson.types.ObjectId;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
+@Document(collection = "result_drugbank")
 public class Dock {
-    private String result_id;
+    @Id
+    private ObjectId _id;
     private String target_id;
     private String ligand_id;
-    private String data_path;
     private Integer score;
-    private String result_content;
-    private String ligand_dataset;
-    private String protein_dataset;
-    private String create_time;
+    private Integer non_h_atoms;
+    private Double rate_combination;
 }

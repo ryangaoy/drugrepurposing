@@ -42,7 +42,7 @@ const Home: React.FC = () => {
             </Row>
           </Col>
           <Col span={12}>
-            <h2 className="listivo-heading-v2__text">Explore Listings on Listivo</h2>
+            <h2 className="listivo-heading-v2__text">Website Introduction</h2>
             <div className="listivo-content-v1__text">
               The repurposing of existing drugs is a rapid and highly effective strategy for
               the discovery and development of drugs to treat new diseases. It is a publicly
@@ -57,7 +57,7 @@ const Home: React.FC = () => {
                   <img
                     src={`/redrugfiles/files/system/img/pro_num.png`}
                     alt="Protein"
-                    style={{ width: '70px' }}
+                    style={{ width: '70px', height: '70px' }}
                   />
                   <Statistic title="The Number of Protein" value={10094} />
                 </Row>
@@ -67,7 +67,7 @@ const Home: React.FC = () => {
                   <img
                     src={`/redrugfiles/files/system/img/mol_num.png`}
                     alt="Drugs"
-                    style={{ width: '70px' }}
+                    style={{ width: '70px', height: '70px' }}
                   />
                   <Statistic title="The Number of Molecular" value={7162} />
                 </Row>
@@ -77,7 +77,7 @@ const Home: React.FC = () => {
                   <img
                     src={`/redrugfiles/files/system/img/dock_num.png`}
                     alt="Docking Results"
-                    style={{ width: '70px' }}
+                    style={{ width: '70px', height: '70px' }}
                   />
                   <Statistic title="Docking Results" value={70} suffix="M+" />
                 </Row>
@@ -87,7 +87,7 @@ const Home: React.FC = () => {
                   <img
                     src={`/redrugfiles/files/system/img/doc_num.png`}
                     alt="Document"
-                    style={{ width: '70px' }}
+                    style={{ width: '70px', height: '70px' }}
                   />
                   <Statistic title="The Number of Document" value={100} suffix="K+" />
                 </Row>

@@ -150,8 +150,13 @@ const TableList: React.FC = () => {
       valueType: 'textarea',
     },
     {
+      title: 'Non H Atoms',
+      dataIndex: 'non_h_atoms',
+      valueType: 'textarea',
+    },
+    {
       title: 'Efficiency',
-      dataIndex: 'efficiency',
+      dataIndex: 'rate_combination',
       valueType: 'textarea',
     },
     // {
@@ -282,8 +287,6 @@ const TableList: React.FC = () => {
             pageSize: number;
             current: number;
           },
-          sort,
-          filter,
         ) => {
           // 这里需要返回一个 Promise,在返回之前你可以进行数据转化
           // 如果需要转化参数可以在这里进行修改
@@ -363,7 +366,7 @@ const TableList: React.FC = () => {
         visible={createModalVisible}
         onVisibleChange={handleModalVisible}
         onFinish={async (value) => {
-          const success = await handleAdd(value as API.RuleListItem);
+          const success = await handleAdd(value as API.DockListItem);
           if (success) {
             handleModalVisible(false);
             if (actionRef.current) {

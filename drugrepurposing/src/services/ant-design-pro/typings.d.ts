@@ -66,12 +66,9 @@ declare namespace API {
     _id?: string;
     target_id?: string;
     ligand_id?: string;
-    ligand_dataset?: string;
-    protein_dataset?: string;
+    non_h_atoms?: number;
+    rate_combination?: number;
     score?: number;
-    createdAt?: string;
-
-    result_id?: string;
   };
 
   type DockList = {

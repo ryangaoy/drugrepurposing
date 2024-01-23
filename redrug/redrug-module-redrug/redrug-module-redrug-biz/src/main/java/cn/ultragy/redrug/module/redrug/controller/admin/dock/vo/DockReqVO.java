@@ -8,6 +8,6 @@ public class DockReqVO extends PageParam {
     private String target_id;
     private String ligand_id;
     private Integer score;
-    private String ligand_dataset;
-    private String protein_dataset;
+    private Integer non_h_atoms;
+    private Double rate_combination;
 }

@@ -29,7 +29,7 @@
 */nbproject/private/
 */build/*
 */nbbuild/
-*/dist/
+drugrepurposing/drugrepurposing/
 */nbdist/
 */.nb-gradle/
 
@@ -66,7 +66,7 @@ redrug/redrug-server/src/main/resources/application-gy.yaml
 */_roadhog-api-doc
 
 # production
-*/dist
+drugrepurposing/drugrepurposing
 
 # misc
 */.DS_Store

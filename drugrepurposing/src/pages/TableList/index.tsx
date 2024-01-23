@@ -125,10 +125,14 @@ const TableList: React.FC = () => {
       valueType: 'textarea',
     },
     {
-      title: 'Efficiency',
-      dataIndex: 'efficiency',
+      title: 'Non H Atoms',
+      dataIndex: 'non_h_atoms',
       valueType: 'textarea',
-      hideInSearch: true,
+    },
+    {
+      title: 'Efficiency',
+      dataIndex: 'rate_combination',
+      valueType: 'textarea',
     },
     {
       title: <FormattedMessage id="pages.searchTable.titleOption" defaultMessage="Operating" />,
@@ -136,7 +140,9 @@ const TableList: React.FC = () => {
       valueType: 'option',
       render: (_, record) => [
         // @ts-ignore
-        <a key="detail" href={`/dock/${btoa(record.result_id)}`}>
+        <a key="detail" href={`/dock/${Buffer.from(String(record.ligand_id + '_' + record.target_id)).toString(
+          'base64',
+        )}`}>
           <FormattedMessage id="pages.searchTable.detail" defaultMessage="Subscribe to alerts" />
         </a>,
       ],
@@ -263,7 +269,7 @@ const TableList: React.FC = () => {
         visible={createModalVisible}
         onVisibleChange={handleModalVisible}
         onFinish={async (value) => {
-          const success = await handleAdd(value as API.RuleListItem);
+          const success = await handleAdd(value as API.DockListItem);
           if (success) {
             handleModalVisible(false);
             if (actionRef.current) {
